@@ -47,7 +47,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Applicant Income Over 50k", "your-income-over-50k", answerNo),
     FormPage("Applicant Benefits", "your-benefits", "value[5]" -> "none"),
     ContentPage("Tax Charge Explanation", "tax-charge-explanation"),
-    FormPage("Previously Claimed Child Benefit", "claimed-child-benefit-before", answerNo),
+    FormPage("Currently Receiving Child Benefit", "currently-receiving-child-benefit", answerNo),
     FormPage("Want to Be Paid Child Benefit", "want-to-be-paid-child-benefit", answerNo),
     FormPage("Does Applicant Have Previous Family Name", "have-previous-family-name", answerNo),
     FormPage("Does Applicant Know Their NINO", "know-your-national-insurance-number", answerNo),
