@@ -64,8 +64,8 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Child Date Of Birth", "child-date-of-birth/1", fieldsForDate(childDob): _*),
     FormPage("Child Registration Country", "child-birth-registration-country/1", "value" -> "other"),
     FormPage("Applicant Relationship to Child", "your-relationship-to-child/1", "value" -> "birthChild"),
+    FormPage("Adopting Through Local Authority", "adopting-through-local-authority/1", answerNo),
     FormPage("Anyone Claimed For Child Before", "anyone-claimed-for-child-before/1", answerNo),
-    FormPage("Child Supporting Documents", "documents/1", "value[0]" -> "birthCertificate"),
     ContentPage("Check Child Details", "check-child-details/1"),
     FormPage("Add Child", "add-child", answerNo),
     ContentPage("Check Your Answers", "check-your-answers")
