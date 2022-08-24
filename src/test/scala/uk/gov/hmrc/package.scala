@@ -58,6 +58,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Best Time to Contact", "best-time-to-contact", "value[0]" -> "morning"),
     FormPage("Applicant Nationality", "your-nationality", "value" -> "British"),
     FormPage("Applicant Employment Status", "your-employment-status", "value[1]" -> "employed"),
+    FormPage("Applicant is HMF or Civil Servant", "hm-forces-or-civil-servant-abroad", answerNo),
     FormPage("Child Name", "child-name/1", "firstName" -> "Baz", "lastName" -> "Quux"),
     FormPage("Child Has Previous Name", "child-has-previous-name/1", answerNo),
     FormPage("Child Biological Sex", "child-biological-sex/1", "value" -> "female"),
