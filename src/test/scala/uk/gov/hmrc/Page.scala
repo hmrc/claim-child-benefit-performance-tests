@@ -36,6 +36,14 @@ object Page {
     )
   }
 
+  final case class DownloadPdf(name: String, url: String) extends Page {
+    override def requests(next: Option[Page]): List[HttpRequestBuilder] = List(
+      http(name)
+        .get(s"$baseUrl$route/$url")
+        .check(status.is(200))
+    )
+  }
+
   final case class FormPage(name: String, url: String, data: (String, String)*) extends Page {
     override def requests(next: Option[Page]): List[HttpRequestBuilder] = {
 

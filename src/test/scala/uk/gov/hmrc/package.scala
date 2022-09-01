@@ -16,7 +16,7 @@
 
 package uk.gov
 
-import uk.gov.hmrc.Page.{ContentPage, FormPage}
+import uk.gov.hmrc.Page.{ContentPage, DownloadPdf, FormPage}
 import uk.gov.hmrc.performance.conf.ServicesConfiguration
 
 import java.time.LocalDate
@@ -69,7 +69,8 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Anyone Claimed For Child Before", "anyone-claimed-for-child-before/1", answerNo),
     ContentPage("Check Child Details", "check-child-details/1"),
     FormPage("Add Child", "add-child", answerNo),
-    ContentPage("Check Your Answers", "check-your-answers")
-    // TODO add PDF download
+    ContentPage("Check Your Answers", "check-your-answers"),
+    ContentPage("Next steps", "next-steps"),
+    DownloadPdf("Download PDF", "print-form")
   )
 }
