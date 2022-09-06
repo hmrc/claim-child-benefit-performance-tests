@@ -40,7 +40,7 @@ package object hmrc extends ServicesConfiguration {
 
   val journey: List[Page] = List(
     ContentPage("Navigate To Start Page", ""),
-    FormPage("Lived or Worked Outside UK", "ever-lived-or-worked-abroad", answerNo),
+    FormPage("Lived or Worked Outside UK", "lived-or-worked-abroad", answerNo),
     FormPage("Any Child Lived With Others", "any-child-in-claim-lived-with-others", answerNo),
     FormPage("Applicant Name", "your-name", "firstName" -> "Foo", "lastName" -> "bar"),
     FormPage("Relationship Status", "relationship-status", "value" -> "single"),
