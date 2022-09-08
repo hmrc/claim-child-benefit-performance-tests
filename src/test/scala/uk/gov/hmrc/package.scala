@@ -41,10 +41,10 @@ package object hmrc extends ServicesConfiguration {
   val journey: List[Page] = List(
     ContentPage("Navigate To Start Page", ""),
     FormPage("Recently Claimed Child Benefit", "recently-claimed-child-benefit", answerNo),
-    FormPage("Lived or Worked Outside UK", "lived-or-worked-abroad", answerNo),
     FormPage("Any Child Lived With Others", "any-child-in-claim-lived-with-others", answerNo),
     FormPage("Applicant Name", "your-name", "firstName" -> "Foo", "lastName" -> "bar"),
     FormPage("Relationship Status", "relationship-status", "value" -> "single"),
+    FormPage("Lived or Worked Outside UK", "lived-or-worked-abroad", answerNo),
     FormPage("Applicant Income", "your-income", "value" -> "belowLowerThreshold"),
     FormPage("Applicant Benefits", "your-benefits", "value[5]" -> "none"),
     ContentPage("Tax Charge Explanation", "tax-charge-explanation"),
