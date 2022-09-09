@@ -53,7 +53,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Does Applicant Have Previous Family Name", "have-previous-family-name", answerNo),
     FormPage("Does Applicant Know Their NINO", "know-your-national-insurance-number", answerNo),
     FormPage("Applicant Date of Birth", "your-date-of-birth", fieldsForDate(applicantDob): _*),
-    FormPage("Applicant Current Address", "your-current-address", "line1" -> "1 Test Street", "town" -> "Test Town", "postcode" -> "ZZ1 1ZZ"),
+    FormPage("Applicant Current Address", "your-current-uk-address", "line1" -> "1 Test Street", "town" -> "Test Town", "postcode" -> "ZZ1 1ZZ"),
     FormPage("Applicant Lived At Current Address For a Year", "lived-at-current-address-12-months", answerYes),
     FormPage("Applicant Telephone Number", "your-telephone-number", "value" -> "07777777777"),
     FormPage("Best Time to Contact", "best-time-to-contact", "value[0]" -> "morning"),
