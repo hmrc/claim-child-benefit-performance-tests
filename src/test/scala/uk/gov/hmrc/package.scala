@@ -47,7 +47,6 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Lived or Worked Outside UK", "lived-or-worked-abroad", answerNo),
     FormPage("Applicant Income", "your-income", "value" -> "belowLowerThreshold"),
     FormPage("Applicant Benefits", "your-benefits", "value[5]" -> "none"),
-    ContentPage("Tax Charge Explanation", "tax-charge-explanation"),
     FormPage("Currently Receiving Child Benefit", "currently-receiving-child-benefit", "value" -> "notClaiming"),
     FormPage("Want to Be Paid Child Benefit", "want-to-be-paid-child-benefit", answerNo),
     FormPage("Does Applicant Have Previous Family Name", "have-previous-family-name", answerNo),
