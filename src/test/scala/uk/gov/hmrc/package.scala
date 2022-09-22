@@ -44,7 +44,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Any Child Lived With Others", "any-child-in-claim-lived-with-others", answerNo),
     FormPage("Applicant Name", "your-name", "firstName" -> "Foo", "lastName" -> "bar"),
     FormPage("Relationship Status", "relationship-status", "value" -> "single"),
-    FormPage("Lived or Worked Outside UK", "lived-or-worked-abroad", answerNo),
+    FormPage("Always Lived in UK", "always-lived-in-uk", answerYes),
     FormPage("Applicant Income", "your-income", "value" -> "belowLowerThreshold"),
     FormPage("Applicant Benefits", "your-benefits", "value[5]" -> "none"),
     FormPage("Currently Receiving Child Benefit", "currently-receiving-child-benefit", "value" -> "notClaiming"),
