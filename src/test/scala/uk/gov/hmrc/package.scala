@@ -68,6 +68,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Anyone Claimed For Child Before", "anyone-claimed-for-child-before/1", answerNo),
     ContentPage("Check Child Details", "check-child-details/1"),
     FormPage("Add Child", "add-child", answerNo),
+    FormPage("Additional Information", "additional-information", "value" -> "information"),
     ContentPage("Check Your Answers", "check-your-answers"),
     ContentPage("Next steps", "next-steps"),
     DownloadPdf("Download PDF", "print-form")
