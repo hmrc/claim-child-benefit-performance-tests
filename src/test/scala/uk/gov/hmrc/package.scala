@@ -56,7 +56,6 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Applicant Lived At Current Address For a Year", "lived-at-current-address-a year", answerYes),
     FormPage("Applicant Telephone Number", "your-telephone-number", "value" -> "07777777777"),
     FormPage("Applicant Nationality", "your-nationality", "value" -> "British"),
-    FormPage("Applicant Employment Status", "your-employment-status", "value[1]" -> "employed"),
     FormPage("Child Name", "child-name/1", "firstName" -> "Baz", "lastName" -> "Quux"),
     FormPage("Child Has Previous Name", "child-has-previous-name/1", answerNo),
     FormPage("Child Biological Sex", "child-biological-sex/1", "value" -> "female"),
