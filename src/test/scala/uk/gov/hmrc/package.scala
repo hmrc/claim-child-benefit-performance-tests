@@ -41,7 +41,6 @@ package object hmrc extends ServicesConfiguration {
   val journey: List[Page] = List(
     ContentPage("Navigate To Start Page", ""),
     FormPage("Recently Claimed Child Benefit", "recently-claimed-child-benefit", answerNo),
-    FormPage("Any Child Lived With Others", "any-child-in-claim-lived-with-others", answerNo),
     FormPage("Applicant Name", "your-name", "firstName" -> "Foo", "lastName" -> "bar"),
     FormPage("Relationship Status", "relationship-status", "value" -> "single"),
     FormPage("Always Lived in UK", "always-lived-in-uk", answerYes),
@@ -64,6 +63,8 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Adopting Through Local Authority", "adopting-through-local-authority/1", answerNo),
     FormPage("Applicant Relationship to Child", "your-relationship-to-child/1", "value" -> "birthChild"),
     FormPage("Anyone Claimed For Child Before", "anyone-claimed-for-child-before/1", answerNo),
+    FormPage("Child Lives With Applicant", "child-lives-with-you/1", answerYes),
+    FormPage("Child Lives With Applicant", "child-lived-with-anyone-else/1", answerNo),
     ContentPage("Check Child Details", "check-child-details/1"),
     FormPage("Add Child", "add-child", answerNo),
     FormPage("Additional Information", "additional-information", "value" -> "information"),
