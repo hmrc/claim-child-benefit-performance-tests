@@ -85,7 +85,6 @@ package object hmrc extends ServicesConfiguration {
     FormPage("What are the bank or building society account details that Child Benefit can be paid to?", "bank-account-details", "firstName" -> "a", "lastName" -> "b", "sortCode" -> "00-11-22", "accountNumber" -> "123456"),
     ContentPage("Check your answers for this section", "check-payment-details"),
 
-    FormPage("Do you have additional information for this claim?", "have-additional-information", answerNo),
     FormPage("Review and send your application", "task-list"),
     FormPage("Declaration", "declaration"),
     ContentPage("Your Child Benefit claim form is ready to be posted", "next-steps")
