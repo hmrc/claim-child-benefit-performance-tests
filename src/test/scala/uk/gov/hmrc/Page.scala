@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,11 +28,11 @@ abstract class Page {
 
 object Page {
 
-  final case class ContentPage(name: String, url: String) extends Page {
+  final case class ContentPage(name: String, url: String, statusCode: Int = 200) extends Page {
     override def requests(next: Option[Page]): List[HttpRequestBuilder] = List(
       http(name)
         .get(s"$baseUrl$route/$url")
-        .check(status.is(200))
+        .check(status.is(statusCode))
     )
   }
 

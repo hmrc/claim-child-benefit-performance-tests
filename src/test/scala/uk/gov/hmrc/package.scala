@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 HM Revenue & Customs
+ * Copyright 2024 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,8 +39,8 @@ package object hmrc extends ServicesConfiguration {
   )
 
   val journey: List[Page] = List(
-    ContentPage("Navigate To Start Page", ""),
-    FormPage("Recently Claimed Child Benefit", "recently-claimed-child-benefit", answerNo),
+    ContentPage("Navigate To Start Page", "", 303),
+    FormPage("Recently Claimed Child Benefit", "recently-claimed-child-benefit", "serviceType" -> "newClaim"),
     FormPage("Do you want to sign in using Government Gateway?", "sign-in-to-government-gateway", answerNo),
     ContentPage("Claim Child Benefit", "task-list"),
 
@@ -82,7 +82,7 @@ package object hmrc extends ServicesConfiguration {
     FormPage("Do you have a UK bank or building society account that Child Benefit can be paid to?", "have-suitable-bank-account", answerYes),
     FormPage("Are you the account holder?", "bank-account-holder", "value" -> "applicant"),
     FormPage("What bank account or building society details do you know?", "account-type", "value" -> "sortCodeAndAccountNumber"),
-    FormPage("What are the bank or building society account details that Child Benefit can be paid to?", "bank-account-details", "firstName" -> "a", "lastName" -> "b", "sortCode" -> "00-11-22", "accountNumber" -> "123456"),
+    FormPage("What are the bank or building society account details that Child Benefit can be paid to?", "bank-account-details", "firstName" -> "a", "lastName" -> "b", "sortCode" -> "00-11-22", "accountNumber" -> "87654321"),
     ContentPage("Check your answers for this section", "check-payment-details"),
 
     FormPage("Review and send your application", "task-list"),
