@@ -1,22 +1,24 @@
+# PLEASE NOTE
+# These tests will not run in the Staging Environment
+# Claim Child Benefits is now hosted in PEGA
+# Neither the claim-child-benefit-fronted and claim-child-benefit
+# are currently deployed in Staging
+
 # claim-child-benefit-performance-tests
 Performance test suite for the `CLAIM_CHILD_BENEFIT` service, using [performance-test-runner](https://github.com/hmrc/performance-test-runner) under the hood.
 
 
-## Running the tests
+## Running the tests (Locally)
 
 Prior to executing the tests ensure you have:
 
 * Docker - to start mongo container
-* Installed/configured service manager
+* Installed/configured service manager 2
 
 Run the following command to start the services locally:
 ```
-docker run --rm -d --name mongo -d -p 27017:27017 mongo:4.0
-
-sm --start PLATFORM_EXAMPLE_UI_TESTS -r --wait 100
+sm2 --start CLAIM_CHILD_BENEFIT_ALL
 ```
-
-Using the `--wait 100` argument ensures a health check is run on all the services started as part of the profile. `100` refers to the given number of seconds to wait for services to pass health checks.
 
 ## Logging
 
@@ -34,6 +36,7 @@ sbt -Dperftest.runSmokeTest=true -DrunLocal=true gatling:test
 sbt -DrunLocal=true gatling:test
 ```
 ### Run the example test against staging environment
+### First of all, deploy both claim-child-benefit-frontend AND claim-child-benefit service
 
 #### Smoke test
 ```
